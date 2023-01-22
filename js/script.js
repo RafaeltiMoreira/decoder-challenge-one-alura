@@ -48,7 +48,7 @@ function hideImage() {
 }
 
 function showImage() {
-  element.style.backgroundImage = "url(/assets/images/imagePrincipal.svg)";
+  element.style.backgroundImage = "url(/images/imagePrincipal.svg)";
 }
 
 async function copyToClipboard(text) {

@@ -1,93 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C&Descriptografar</title>
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C&Descriptografar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  <body class="dark-blue">
+    <div id="container">
+      <img
+        class="logoInit"
+        src="./images/logo-alura.svg"
+        alt="Image da logo da Alura"
+      />
 
-<body class="dark-blue">
-  <div id="container">
-    <img class="logoInit" src="./images/logo-alura.svg" alt="Image da logo da Alura" />
+      <p class="user">
+        Oracle + Alura <br />
+        Decodificador de palavras 💻
+      </p>
 
-    <p class="user">
-      Oracle + Alura <br />
-      Decodificador de palavras 💻
-    </p>
-
-    <div>
-      <div class="mode">
-        <input type="checkbox" class="checkbox" id="check" />
-        <label class="label" for="check">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
       <div>
-        <textarea class="text-area" cols="40" rows="4" placeholder="Digite o texto aqui"></textarea>
-        <div class="informacao">
-          <h6>
-            <img class="imageExcla" src="./images/exclamacao.svg" alt="Imagem da pessoa com a lupa" />Apenas
-            letras minuscúlas e sem acento.
-          </h6>
+        <div class="mode">
+          <input type="checkbox" class="checkbox" id="check" />
+          <label class="label" for="check">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
         </div>
-        <div class="btnInitial">
-          <button id="encriptS" class="btn-encriptar" onclick="btnEncript(); hideImage()">
-            Criptografar
-          </button>
-          <button id="decriptS" class="btn-desencriptar" onclick="btnDecript(); hideImage()">
-            Descriptografar
-          </button>
+        <div>
+          <textarea
+            class="text-area"
+            cols="40"
+            rows="4"
+            placeholder="Digite o texto aqui"
+          ></textarea>
+          <div class="informacao">
+            <h6>
+              <img
+                class="imageExcla"
+                src="./images/exclamacao.svg"
+                alt="Imagem da pessoa com a lupa"
+              />Apenas letras minuscúlas e sem acento.
+            </h6>
+          </div>
+          <div class="btnInitial">
+            <button
+              id="encriptS"
+              class="btn-encriptar"
+              onclick="btnEncript(); hideImage()"
+            >
+              Criptografar
+            </button>
+            <button
+              id="decriptS"
+              class="btn-desencriptar"
+              onclick="btnDecript(); hideImage()"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </div>
+        <div class="fieldImage">
+          <textarea
+            id="textAnswer"
+            class="mensagem element"
+            cols="40"
+            rows="10"
+            placeholder="Resposta do texto"
+          ></textarea>
+
+          <div class="btnCopy">
+            <button
+              class="btn-copiar"
+              onclick="copyToClipboard(document.querySelector('.mensagem').value)"
+            >
+              Copiar
+            </button>
+          </div>
+          <p class="text-user">Nenhuma mensagem econtrada</p>
+          <p class="text-user-frase">
+            Clique no botão criptografar antes de descriptografar.
+          </p>
         </div>
       </div>
-      <div class="fieldImage">
-        <textarea id="textAnswer" class="mensagem element" cols="40" rows="10"
-          placeholder="Resposta do texto"></textarea> </textarea>
 
-        <div class="btnCopy">
-          <button class="btn-copiar" onclick="copyToClipboard(document.querySelector('.mensagem').value)">
-            Copiar
-          </button>
-        </div>
-        <p class="text-user">Nenhuma mensagem econtrada</p>
-        <p class="text-user-frase">
-          Clique no botão criptografar antes de descriptografar.
-        </p>
+      <div id="links">
+        <a href="https://www.instagram.com/rafaeltimoreira/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://github.com/RafaeltiMoreira" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/rafael-moreira-ti/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
       </div>
+
+      <footer>
+        Made with 💚💛 by Rafael Moreira <br />
+        Challenge ONE | Oracle + Alura
+      </footer>
     </div>
 
-    <div id="links">
-      <a href="https://www.instagram.com/rafaeltimoreira/" target="_blank">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-      <a href="https://github.com/RafaeltiMoreira" target="_blank">
-        <ion-icon name="logo-github"></ion-icon>
-      </a>
-      <a href="https://www.linkedin.com/in/rafael-moreira-ti/" target="_blank">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </div>
-
-    <footer>
-      Made with 💚💛 by Rafael Moreira <br />
-      Challenge ONE | Oracle + Alura
-    </footer>
-  </div>
-
-  <script src="js/script.js"></script>
-  <script src="https://kit.fontawesome.com/489de0bda8.js" crossorigin="anonymous"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/489de0bda8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

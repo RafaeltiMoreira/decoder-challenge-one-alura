@@ -24,14 +24,14 @@ body.dark-blue {
   --text-color: #ffffff;
   font-family: "Inter", sans-serif;
 
-  background-image: url(./images/background-dark.svg);
+  background-image: url(images/background-dark.svg);
 }
 
 body {
   background: var(--bg-color);
   color: var(--text-color);
   font-family: "Inter", sans-serif;
-  background-image: url(./images/background-light.svg);
+  background-image: url(images/background-light.svg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -173,7 +173,7 @@ footer {
   font-family: "Inter", sans-serif;
   font-weight: 600;
 
-  background-image: url(./images/imagePrincipal.svg);
+  background-image: url(images/imagePrincipal.svg);
 
   background-repeat: no-repeat;
   background-position: center;

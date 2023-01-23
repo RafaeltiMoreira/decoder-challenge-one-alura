@@ -69,23 +69,29 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("encriptS").addEventListener("click", () => {
     const clicBtt = document.querySelector(".text-user-frase");
     const clicBtb = document.querySelector(".text-user");
+    const clicBtc = document.querySelector(".btn-copiar");
     if (textArea.value === ".mensagem") {
       clicBtb.classList.remove("hide");
       clicBtt.classList.remove("hide");
+      clicBtc.classList.add("hide");
     } else {
       clicBtb.classList.add("hide");
       clicBtt.classList.add("hide");
+      clicBtc.classList.remove("hide");
     }
   });
   document.getElementById("decriptS").addEventListener("click", () => {
     const clicBtt = document.querySelector(".text-user-frase");
     const clicBtb = document.querySelector(".text-user");
+    const clicBtc = document.querySelector(".btn-copiar");
     if (textArea.value === ".mensagem") {
       clicBtb.classList.remove("hide");
       clicBtt.classList.remove("hide");
+      clicBtc.classList.add("hide");
     } else {
       clicBtb.classList.add("hide");
       clicBtt.classList.add("hide");
+      clicBtc.classList.remove("hide");
     }
   });
 });

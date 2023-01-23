@@ -301,10 +301,12 @@ body .informacao h6 {
 
   .text-user {
     top: -170px;
+    font-size: 12px;
   }
 
   .text-user-frase {
     top: -170px;
+    font-size: 12px;
   }
 
   #links {
